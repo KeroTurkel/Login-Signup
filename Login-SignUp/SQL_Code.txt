@@ -1,0 +1,16 @@
+mysql -u root
+
+CREATE DATABASE 1303_login_signup;
+
+USE 1303_login_signup;
+
+CREATE TABLE IF NOT EXISTS login
+(
+ID INT AUTO_INCREMENT,
+benutzername CHAR(20),
+passwort CHAR(20),
+PRIMARY KEY (ID)
+);
+
+INSERT INTO login(ID, benutzername, passwort)
+VALUES (1, "Kero", "1234");
